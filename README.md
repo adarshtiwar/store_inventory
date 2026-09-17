@@ -1,4 +1,4 @@
-# Shukla Inventory — Final MERN Factory Store
+# Store Inventory — Final MERN Factory Store
 
 Production-oriented inventory system for connectors, couplers, terminals and other factory store items.
 
