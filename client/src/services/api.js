@@ -1,4 +1,4 @@
-const API = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+const API = (import.meta.env.VITE_API_URL || "http://localhost:5000/api").replace(/\/+$/, "");
 
 function authHeaders() {
   return {
@@ -7,7 +7,7 @@ function authHeaders() {
 }
 
 export async function api(path, options = {}) {
-  const response = await fetch(API + path, {
+  const response = await fetch(`${API}${path}`, {
     ...options,
     headers: {
       "Content-Type": "application/json",
