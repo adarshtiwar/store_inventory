@@ -1,4 +1,4 @@
-const API = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+const API = import.meta.env.VITE_API_URL || "https://store-inventory-nbwp.onrender.com/";
 
 function authHeaders() {
   return {
